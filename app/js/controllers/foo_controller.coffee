@@ -1,5 +1,4 @@
-@FooController = ($scope, $http) ->
-
+angular.module("app").controller "FooController", ($scope, $http) ->
   $http.get('/api/name').success (data) ->
     $scope.name = data.name
 
