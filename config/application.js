@@ -14,9 +14,6 @@
 module.exports = function(lineman) {
   //Override application configuration here. Common examples follow in the comments.
   return {
-    removeTasks: {
-      dist: ['uglify']
-    },
     // API Proxying
     //
     // During development, you'll likely want to make XHR (AJAX) requests to an API on the same
@@ -29,7 +26,7 @@ module.exports = function(lineman) {
         enabled: true,
         host: 'localhost',
         port: 3000,
-        prefix: ''
+        prefix: 'api'
       }
     },
 
